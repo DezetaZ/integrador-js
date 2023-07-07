@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+  }
+a{
+    transition: all 1s;
+}
+a:hover{
+    transition: all 1s;
+    color: rgb(126, 240, 248);
+
+}
