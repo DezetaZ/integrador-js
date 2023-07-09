@@ -4,7 +4,7 @@ const productsData = [
     name: "M4A1 Monst",
     calidad: "legend",
     price: "$500",
-    img: "./img/skins/m4a1 mariposa.png",
+    img: "./assets/img/skins/m4a1-mariposa.png",
 
 },
 {
@@ -12,7 +12,7 @@ const productsData = [
     name: "Bayonet",
     calidad: "legend",
     price: "$1200",
-    img: "./img/skins/bayonet.png",
+    img: "./assets/img/skins/bayonet.png",
     
 },
 {
@@ -20,7 +20,7 @@ const productsData = [
     name: "Statik",
     calidad: "legend",
     price: "$1500",
-    img: "./img/skins/statik.png",
+    img: "./assets/img/skins/statik.png",
     
 },
 {
@@ -28,7 +28,7 @@ const productsData = [
     name: "ak47 bloodsport",
     calidad: "legend",
     price: "$700",
-    img: "./img/skins/ak47-bloodsport.png",
+    img: "./assets/img/skins/ak47-bloodsport.png",
     
 },
 {
@@ -36,7 +36,7 @@ const productsData = [
     name: "Knife Butterfly",
     calidad: "epica",
     price: "$700",
-    img: "./img/skins/mariposa.png",
+    img: "./assets/img/skins/mariposa.png",
     
 },
 {
@@ -44,7 +44,7 @@ const productsData = [
     name: "Knife Butterfly Red",
     calidad: "epica",
     price: "$900",
-    img: "./img/skins/mariposa-red.png",
+    img: "./assets/img/skins/mariposa-red.png",
     
 },
 {
@@ -52,7 +52,7 @@ const productsData = [
     name: "Greenigth",
     calidad: "epica",
     price: "$600",
-    img: "./img/skins/greenigth.png",
+    img: "./assets/img/skins/greenigth.png",
     
 },
 {
@@ -60,7 +60,7 @@ const productsData = [
     name: "usp Fantic",
     calidad: "epica",
     price: "$200",
-    img: "./img/skins/pistol.png",
+    img: "./assets/img/skins/pistol.png",
     
 },
 {
@@ -68,7 +68,7 @@ const productsData = [
     name: "m4a1 Hotroad",
     calidad: "epica",
     price: "$300",
-    img: "./img/skins/m4a1-hotroad.png",
+    img: "./assets/img/skins/m4a1-hotroad.png",
     
 },
 {
@@ -76,7 +76,7 @@ const productsData = [
     name: "m4a1 Flame",
     calidad: "epica",
     price: "$300",
-    img: "./img/skins/m4a1-flame.png",
+    img: "./assets/img/skins/m4a1-flame.png",
     
 },
 {
@@ -84,7 +84,7 @@ const productsData = [
     name: "ak47 Simp",
     calidad: "comun",
     price: "$120",
-    img: "./img/skins/ak1simp.png",
+    img: "./assets/img/skins/ak1simp.png",
     
 },
 {
@@ -92,7 +92,7 @@ const productsData = [
     name: "aug momentum",
     calidad: "comun",
     price: "$80",
-    img: "./img/skins/aug-momentum.png",
+    img: "./assets/img/skins/aug-momentum.png",
     
 },
 {
@@ -100,7 +100,7 @@ const productsData = [
     name: "m4a1 simp",
     calidad: "comun",
     price: "$100",
-    img: "./img/skins/m4a1-simp.png",
+    img: "./assets/img/skins/m4a1-simp.png",
     
 },
 {
@@ -108,7 +108,7 @@ const productsData = [
     name: "De. Gblood",
     calidad: "comun",
     price: "$90",
-    img: "./img/skins/de-greenblood.png",
+    img: "./assets/img/skins/de-greenblood.png",
     
 },
 {
@@ -116,7 +116,7 @@ const productsData = [
     name: "De. Printstream",
     calidad: "comun",
     price: "$50",
-    img: "./img/skins/de-printstream.png",
+    img: "./assets/img/skins/de-printstream.png",
     
 },
 {
@@ -124,7 +124,7 @@ const productsData = [
     name: "p90 Nostalgia",
     calidad: "comun",
     price: "$60",
-    img: "./img/skins/p90-nostalgia.png",
+    img: "./assets/img/skins/p90-nostalgia.png",
     
 },
 {
@@ -132,12 +132,18 @@ const productsData = [
     name: "show Viwsor",
     calidad: "Unic",
     price: "$10.000",
-    img: "./img/skins/show-viwsor.png",
+    img: "./assets/img/skins/show-viwsor.png",
     
 },
 
-
 ];
+
+const UnicProduct = () => {
+    let productsList = [];
+    for (let i = 0; i < productsData.length; i ++) {
+        if (productsData.calidad[i] === "Unic")
+		productsList.push(productsData.slice(i, i +1 ));
+}};
 const divideProductsInParts = (size) => {
 	let productsList = [];
 	for (let i = 0; i < productsData.length; i += size) {

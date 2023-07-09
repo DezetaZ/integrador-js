@@ -10,7 +10,7 @@
     }
 }
 @media (max-width: 900px){
-    .card-expo{
+    .card-expo-cont{
         display: none;
     }
     .hero-text{
@@ -18,7 +18,7 @@
         text-align: center;
     }
     .navbar-list{
-        top: 74px;
+        top: -500px;
         right: 0px;
         position: absolute;
         height: 74px;
@@ -49,9 +49,13 @@
         padding-bottom: 5px;
     }
 }
-@media (max-width: 700px){
+@media (max-width: 710px){
     .hero-text{
         width: 90%;
+        text-align: center;
+    }
+    .hero-info{
+        text-align: center;
     }
 }
 @media (max-width: 558px){
