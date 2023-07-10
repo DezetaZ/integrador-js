@@ -10,15 +10,13 @@
     }
 }
 @media (max-width: 900px){
-    .card-expo-cont{
-        display: none;
-    }
+
     .hero-text{
         width: 80%;
         text-align: center;
     }
     .navbar-list{
-        top: -500px;
+        top: -80px;
         right: 0px;
         position: absolute;
         height: 74px;
@@ -28,9 +26,15 @@
         border-bottom: 1px solid rgb(61, 61, 61);
         border-top: 1px solid rgb(31, 31, 31);
         justify-content: space-around;
-        display: none;
+        z-index: 2;
         
 
+    }
+    .open-menu{
+   
+        right: 0px;
+        top: 74px;
+        transition: all 1s;
     }
     .menuh{
         display: flex;

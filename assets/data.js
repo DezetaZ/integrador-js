@@ -138,12 +138,7 @@ const productsData = [
 
 ];
 
-const UnicProduct = () => {
-    let productsList = [];
-    for (let i = 0; i < productsData.length; i ++) {
-        if (productsData.calidad[i] === "Unic")
-		productsList.push(productsData.slice(i, i +1 ));
-}};
+
 const divideProductsInParts = (size) => {
 	let productsList = [];
 	for (let i = 0; i < productsData.length; i += size) {
