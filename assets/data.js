@@ -3,7 +3,7 @@ const productsData = [
     id: 1,
     name: "M4A1 Monst",
     calidad: "legend",
-    price: "$500",
+    price: 500,
     img: "./assets/img/skins/m4a1-mariposa.png",
 
 },
@@ -11,7 +11,7 @@ const productsData = [
     id: 2,
     name: "Bayonet",
     calidad: "legend",
-    price: "$1200",
+    price: 1200,
     img: "./assets/img/skins/bayonet.png",
     
 },
@@ -19,7 +19,7 @@ const productsData = [
     id: 3,
     name: "Statik",
     calidad: "legend",
-    price: "$1500",
+    price: 1500,
     img: "./assets/img/skins/statik.png",
     
 },
@@ -27,7 +27,7 @@ const productsData = [
     id: 4,
     name: "ak47 bloodsport",
     calidad: "legend",
-    price: "$700",
+    price: 700,
     img: "./assets/img/skins/ak47-bloodsport.png",
     
 },
@@ -35,7 +35,7 @@ const productsData = [
     id: 5,
     name: "Knife Butterfly",
     calidad: "epica",
-    price: "$700",
+    price: 700,
     img: "./assets/img/skins/mariposa.png",
     
 },
@@ -43,7 +43,7 @@ const productsData = [
     id: 6,
     name: "Knife Butterfly Red",
     calidad: "epica",
-    price: "$900",
+    price: 900,
     img: "./assets/img/skins/mariposa-red.png",
     
 },
@@ -51,7 +51,7 @@ const productsData = [
     id: 7,
     name: "Greenigth",
     calidad: "epica",
-    price: "$600",
+    price: 600,
     img: "./assets/img/skins/greenigth.png",
     
 },
@@ -59,7 +59,7 @@ const productsData = [
     id: 8,
     name: "usp Fantic",
     calidad: "epica",
-    price: "$200",
+    price: 200,
     img: "./assets/img/skins/pistol.png",
     
 },
@@ -67,7 +67,7 @@ const productsData = [
     id: 9,
     name: "m4a1 Hotroad",
     calidad: "epica",
-    price: "$300",
+    price: 300,
     img: "./assets/img/skins/m4a1-hotroad.png",
     
 },
@@ -75,7 +75,7 @@ const productsData = [
     id: 10,
     name: "m4a1 Flame",
     calidad: "epica",
-    price: "$300",
+    price: 300,
     img: "./assets/img/skins/m4a1-flame.png",
     
 },
@@ -83,7 +83,7 @@ const productsData = [
     id: 11,
     name: "ak47 Simp",
     calidad: "comun",
-    price: "$120",
+    price: 120,
     img: "./assets/img/skins/ak1simp.png",
     
 },
@@ -91,7 +91,7 @@ const productsData = [
     id: 12,
     name: "aug momentum",
     calidad: "comun",
-    price: "$80",
+    price: 80,
     img: "./assets/img/skins/aug-momentum.png",
     
 },
@@ -99,7 +99,7 @@ const productsData = [
     id: 13,
     name: "m4a1 simp",
     calidad: "comun",
-    price: "$100",
+    price: 100,
     img: "./assets/img/skins/m4a1-simp.png",
     
 },
@@ -107,7 +107,7 @@ const productsData = [
     id: 14,
     name: "De. Gblood",
     calidad: "comun",
-    price: "$90",
+    price: 90,
     img: "./assets/img/skins/de-greenblood.png",
     
 },
@@ -115,7 +115,7 @@ const productsData = [
     id: 15,
     name: "De. Printstream",
     calidad: "comun",
-    price: "$50",
+    price: 50,
     img: "./assets/img/skins/de-printstream.png",
     
 },
@@ -123,15 +123,15 @@ const productsData = [
     id: 16,
     name: "p90 Nostalgia",
     calidad: "comun",
-    price: "$60",
+    price: 60,
     img: "./assets/img/skins/p90-nostalgia.png",
     
 },
 {
     id: 17,
     name: "show Viwsor",
-    calidad: "Unic",
-    price: "$10.000",
+    calidad: "unic",
+    price: 10.000,
     img: "./assets/img/skins/show-viwsor.png",
     
 },

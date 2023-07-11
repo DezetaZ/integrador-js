@@ -157,7 +157,7 @@ header{
     align-items: center;
     flex-direction: column;
     height: 550px;
-    width: 300px;
+    width: 400px;
     border-radius: 0px 0px 0px 10px;
     -webkit-box-shadow: inset 0px 0px 81px 13px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0px 81px 13px rgba(0,0,0,0.75);
@@ -175,7 +175,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    cursor: pointer;
+
     
 
 }
@@ -184,7 +184,8 @@ header{
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     -webkit-box-shadow: inset 0px 0px 81px 13px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0px 81px 13px rgba(0,0,0,0.75);
     box-shadow: inset 0px 0px 81px 13px rgba(0,0,0,0.75);
@@ -201,15 +202,31 @@ header{
     justify-content: space-evenly;
 
 }
+.item-cont{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.item-text>h2{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
 .cart-item-img{
     width: 33%;
     height: 90px;
     border-radius: 10px;
-    border: solid 1px rgb(251, 255, 0);
-    background: radial-gradient(circle, rgba(108, 116, 0, 0.877) 20%, rgba(33, 37, 0, 0.877) 89%);
+    border: solid 1px rgba(0, 255, 119, 0.714);
+    background: radial-gradient(circle, rgba(42, 68, 61, 0.877) 20%, rgba(33, 37, 0, 0.877) 89%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .cart-cont>h2{
     width: 33%;
+ 
 }
 .restar{
     display: flex;
@@ -220,6 +237,7 @@ header{
     border: none;
     padding: 0px 5px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .sumar{
     display: flex;
@@ -230,6 +248,7 @@ header{
     border: none;
     padding: 0px 5px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .cart-info{
     flex-direction: column;
@@ -254,17 +273,23 @@ header{
 .cart-info>h2{
     padding-left: 20px;
 }
-.cart-info>button{
+.btn-buy{
     background-color: rgba(72, 240, 148, 0.541);
     height: 40px;
     width: 100%;
     font-size: 20px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
-.cart-info>button:last-child{
+.btn-vaciar{
     background-color: transparent;
     border: solid 1px rgba(72, 240, 148, 0.541);
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 /* HERO ---------------------------------------------------------------------------------------------------------------------------------------*/
 #hero{
@@ -505,12 +530,12 @@ header{
     gap: 30px;
     max-width: 1000px;
 }
-.card-cont{
+.card-cont-comun{
     
     
     width: 250px;
     height: 300px;
-    border: solid 2px  rgb(0, 122, 61);
+    border: solid 2px  rgb(1, 185, 93);
     border-radius: 6px;
     background: radial-gradient(circle, rgba(0, 54, 28, 0.877) 20%, rgba(0, 37, 27, 0.877) 89%);
     
@@ -526,33 +551,38 @@ header{
     align-items: center;
     flex-direction: column;
 }
-.card-title{
+.card-title-comun{
     padding-top: 20px;
     font-family: 'Acme', sans-serif;
 
 }
 
-.card-buy{
+.card-buy-comun{
     width: 100%;
     
     background: linear-gradient(175deg, rgba(0, 219, 113, 0.329) 10%, rgba(0, 170, 79, 0.295) 97%) ;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: solid 2px  rgb(0, 122, 61);
+    border-top: solid 2px  rgb(0, 102, 51);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 .buttom-buy{
-    padding: 5px 6px;
-    background: linear-gradient(175deg, rgb(0, 219, 114) 10%, rgb(0, 170, 80) 47%, rgba(0,255,214,1) 99%);
-    
+    padding: 10px 10px;
+    -webkit-box-shadow: inset 0px 0px 31px 1px rgba(8, 131, 90, 0.75);
+    -moz-box-shadow: inset 0px 0px 31px 1px rgba(8, 131, 90, 0.75);
+    box-shadow: inset 0px 0px 31px 1px rgba(8, 131, 90, 0.75);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
     border: transparent;
-    
-    
-    background-clip: text;
+    color: rgb(174, 252, 235);
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+/*     background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
+    -moz-background-clip: text; */
 }
 .buttom-buy>h2{
     font-family: 'Lilita One', cursive;
@@ -561,40 +591,41 @@ header{
     font-weight: 700;
     cursor: pointer;
 }
-.card-buy>p{
+.price-comun{
     font-family: 'Lilita One', cursive;
     color: rgb(184, 250, 190);
     font-size: 22px;
     font-weight: 400;
 }
 /* legendaria */
-.card-cont-legendaria{
+.card-cont-legend{
     
     
     width: 250px;
     height: 300px;
-    border: solid 2px  rgb(179, 161, 2);
+    border: solid 2px  rgb(250, 225, 0);
     border-radius: 6px;
     background: radial-gradient(circle, rgba(108, 116, 0, 0.877) 20%, rgba(33, 37, 0, 0.877) 89%);
     
 }
-.card-title-legendaria{
+.card-title-legend{
     padding-top: 20px;
     font-family: 'Acme', sans-serif;
 
 }
-.card-buy-legendaria{
+.card-buy-legend{
     width: 100%;
-    
+    justify-content: space-around;
+
     background: linear-gradient(175deg, rgba(215, 219, 0, 0.432) 10%, rgba(170, 167, 0, 0.541) 97%) ;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: solid 2px  rgb(179, 161, 2);
+    border-top: solid 2px  rgb(146, 132, 0);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.card-buy-legendaria>p{
+.price-legend{
     font-family: 'Lilita One', cursive;
     color: rgb(240, 250, 184);
     font-size: 22px;
@@ -606,7 +637,7 @@ header{
     
     width: 250px;
     height: 300px;
-    border: solid 2px  rgb(101, 10, 180);
+    border: solid 2px  rgb(136, 0, 255);
     border-radius: 6px;
     background: radial-gradient(circle, rgba(35, 0, 83, 0.877) 20%, rgba(17, 0, 37, 0.877) 89%);
     
@@ -618,16 +649,17 @@ header{
 }
 .card-buy-epica{
     width: 100%;
-    
-    background: linear-gradient(175deg, rgba(88, 0, 219, 0.432) 10%, rgba(0, 102, 170, 0.541) 97%) ;
+    justify-content: space-around;
+
+    background: linear-gradient(175deg, rgba(88, 0, 219, 0.432) 10%, rgba(116, 0, 170, 0.541) 97%) ;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: solid 2px  rgb(97, 45, 160);
+    border-top: solid 2px  rgb(79, 41, 124);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.card-buy-epica>p{
+.price-epica{
     font-family: 'Lilita One', cursive;
     color: rgb(240, 250, 184);
     font-size: 22px;
@@ -648,6 +680,41 @@ header{
     box-shadow: inset 0px 0px 51px 3px rgba(0,0,0,0.75);
     background-color: rgba(29, 29, 29, 0.535);
     justify-content: center;
+}
+/* Unic */
+.card-cont-unic{
+    
+    
+    width: 250px;
+    height: 300px;
+    border: solid 2px  rgb(0, 238, 255);
+    border-radius: 6px;
+    background: radial-gradient(circle, rgba(2, 93, 197, 0.877) 20%, rgba(90, 3, 190, 0.877) 89%);
+    
+}
+.card-title-unic{
+    padding-top: 20px;
+    font-family: 'Acme', sans-serif;
+
+}
+.card-buy-unic{
+    width: 100%;
+    justify-content: space-around;
+
+    background: linear-gradient(175deg, rgba(88, 0, 219, 0.432) 10%, rgba(116, 0, 170, 0.541) 97%) ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: solid 2px  rgb(97, 45, 160);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.price-unic{
+    font-family: 'Lilita One', cursive;
+    color: rgb(240, 250, 184);
+    font-size: 22px;
+    font-weight: 400;
+
 }
 /* about-us--------------------------------------------------------------------------------------------------------------------------------------*/
 #about-us{
@@ -743,3 +810,27 @@ footer{
     border: solid 1px rgb(45, 44, 44);
     
 }
+.add-msg {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(210, 210, 210);
+    background-color: green;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: all 0.5s ease-out;
+    transform: translateY(200%);
+  }
+  
+.active-msg {
+    transform: translateY(0);
+    transition: all 0.5s ease-in;
+}
+.clear{
+    background: rgb(84, 84, 84);
+    color: #878787;
+    cursor: not-allowed;
+    border: none;
+  }
