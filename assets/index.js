@@ -181,9 +181,9 @@ const createCartProduct = (product) => {
                     <h2>${price}</h2>
                 </div>
                 <div class="item-cantidad">
-                    <button class="restar">-</button>
+                    <button class="restar" data-id=${id}>-</button>
                     <h2>${cant}</h2>
-                    <button class="sumar">+</button>
+                    <button class="sumar" data-id=${id}>+</button>
                 </div>
             </div>
 
@@ -223,7 +223,7 @@ const additemToProduct = (product) => {
             ? { ...cartProduct, cant: cartProduct.cant + 1 }
             : cartProduct;
     });
-}
+};
 const showMsg = (msg) => {
     sumbitMsg.classList.add("active-msg");
     sumbitMsg.textContent = msg;
@@ -277,46 +277,41 @@ const addProduct = (e) => {
     updateCart();
     
 };
-const removeProductFromCart = (existingProduct) => {
+const removeProductCart = (existingProduct) => {
     cartCont = cartCont.filter((product) => {
         return product.id !== existingProduct.id;
     });
     updateCart();
 };
 
-const substractProductUnit = (existingProduct) => {
+const RestUnitItem = (existingProduct) => {
     cartCont = cartCont.map((product) => {
         return product.id === existingProduct.id
             ? { ...product, cant: Number(product.cant) - 1 }
             : product;
     });
 };
-const handleMinusBtnEvent = (id) => {
+const reducirItemCart = (id) => {
     const existingCartProduct = cartCont.find((item) => item.id === id);
 
-/*     if (existingCartProduct.cant === 1) {
-        //Eliminar producto
-        if (window.confirm("¿Desea eliminar el producto del carrito?")) {
-            removeProductFromCart(existingCartProduct);
-        }
-        return;
-    } */
-    //Sacarle unidad al producto
-    substractProductUnit(existingCartProduct);
+    if (existingCartProduct.cant === 1) {
+        removeProductCart(existingCartProduct);
+
+    }
+
+    RestUnitItem(existingCartProduct);
 };
-const handlePlusBtnEvent = (id) => {
+const aumentarItemCart = (id) => {
 	const existingCartProduct = cartCont.find((item) => item.id === id);
 	additemToProduct(existingCartProduct);
 };
 
-const handleQuantity = (e) => {
+const QuestItemCart = (e) => {
     if (e.target.classList.contains("restar")) {
-        //Manejamos evento de boton -
-        handleMinusBtnEvent(e.target.dataset.id);
+
+        reducirItemCart(e.target.dataset.id);
     } else if (e.target.classList.contains("sumar")) {
-        //Manejamos evento de boton +
-        handlePlusBtnEvent(e.target.dataset.id);    }
-    //Actualizamos estado de carrito
+        aumentarItemCart(e.target.dataset.id);    }
     updateCart();
 };
 
@@ -324,16 +319,16 @@ const handleQuantity = (e) => {
 const init = () => {
 
     renderProducts(appState.products[appState.currentProductsIndex]);
-    cartbtn.addEventListener("click", togglecart)
-    menubtn.addEventListener("click", togglemenu)
+    cartbtn.addEventListener("click", togglecart);
+    menubtn.addEventListener("click", togglemenu);
     showMoreBtn.addEventListener("click", showMoreProduct);
     calidadContainer.addEventListener("click", applyFilter);
-    window.addEventListener("scroll", closeMenus)
-    navbarmenu.addEventListener("clicl", closeMenu)
+    window.addEventListener("scroll", closeMenus);
+    navbarmenu.addEventListener("clicl", closeMenu);
     document.addEventListener("DOMContentLoaded", renderCart);
     document.addEventListener("DOMContentLoaded", showCartTotal);
     productsContainer.addEventListener("click", addProduct);
-    productsCart.addEventListener("click", handleQuantity)
+    productsCart.addEventListener("click", QuestItemCart);
     clearBtn(btnBuy);
     clearBtn(btnVaciar);
     renderCartBubble();

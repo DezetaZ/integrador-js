@@ -815,12 +815,16 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(210, 210, 210);
-    background-color: green;
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 156, 153);
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0px 0px 71px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 71px 3px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 71px 3px rgba(0,0,0,0.75);
     position: fixed;
-    bottom: 0;
-    width: 100%;
-    transition: all 0.5s ease-out;
+    bottom: 0px;
+    width: 30%;
+    transition: all 0.5s;
     transform: translateY(200%);
   }
   
@@ -833,4 +837,15 @@ footer{
     color: #878787;
     cursor: not-allowed;
     border: none;
+  }
+  /* ----------------------------------------------------------------LOGIN------------------------------------------------------------------------ */
+
+  .background-login{
+    background-color: #a23131;
+    width: 100%;
+    height: 100%;
+  }
+  #Login{
+    height: 100%;
+    width: 100%;
   }
