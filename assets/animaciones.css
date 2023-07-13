@@ -32,5 +32,13 @@ a:hover{
     top: 74px;
     transition: all 1s;
 }
+.enter-btn:hover{
+    color: rgb(253, 253, 253);
+    background-color: rgb(0, 0, 0);
+    -webkit-box-shadow: inset 0px 0px 51px 13px #156a6a;
+    -moz-box-shadow: inset 0px 0px 51px 13px #156a6a;
+    box-shadow: inset 0px 0px 51px 13px #156a6a;
+    transition: all 1s;
+  }
 
 

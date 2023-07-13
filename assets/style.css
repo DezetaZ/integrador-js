@@ -81,11 +81,11 @@ header{
     
 }
 .logo-name{
-    font-family: 'Noto Sans', sans-serif;
+
     color: white;
     cursor: default;
     padding-left: 20px;
-
+    font-family: 'Noto Sans', sans-serif;
     text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) ,
      0 0 20px #61eedd , 0 0 20px #080808 , 0 0 30px #61eedd , 0 0 100px #61eedd ;
 }
@@ -365,6 +365,8 @@ header{
 }
 .hero-text>h2{
     color: rgb(146, 176, 169);
+
+
 }
 
 
@@ -757,6 +759,7 @@ footer{
 }
 .cont-title>h2{
     padding-left: 20px;
+    cursor: default;
 }
 .cont-redes{
     display: flex;
@@ -794,6 +797,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
 }
 .terminos{
     display: flex;
@@ -801,6 +805,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
 }
 .hiddent{
     visibility: hidden;
@@ -838,14 +843,134 @@ footer{
     cursor: not-allowed;
     border: none;
   }
+  .dis{
+    display: none;
+  }
+  #dis{
+    display: none;
+  }
   /* ----------------------------------------------------------------LOGIN------------------------------------------------------------------------ */
 
   .background-login{
-    background-color: #a23131;
+    background-color: #000000;
     width: 100%;
-    height: 100%;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  #header-login{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100px;
+    padding-top: 100px;
+    width: 100%;
+  }
+  #header-login>h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans', sans-serif;
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) ,
+     0 0 20px #61eedd , 0 0 20px #080808 , 0 0 30px #61eedd , 0 0 100px #61eedd ;
+     cursor: default;
+
   }
   #Login{
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    padding-top: 40px;
   }
+  .login-cont{
+    height: 400px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    color: #080808;
+  
+
+  }
+  .login-cont>h2{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;    
+    cursor: default;
+
+  }
+  .imput-cont{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .imput-label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    border: solid 1px black;
+    border-radius: 8px;
+  }
+
+  input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border: transparent;
+    color: #000000;
+    background-color: transparent;
+  }
+  label{
+    color: #000000;
+  }
+  .error-login{
+    color: #c85858;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .enter-btn{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #01a6a6;
+    -webkit-box-shadow: inset 0px 0px 21px 1px rgba(255, 255, 255, 0.592);
+    -moz-box-shadow: inset 0px 0px 21px 1px rgba(255, 255, 255, 0.592);
+    box-shadow: inset 0px 0px 21px 1px rgba(255, 255, 255, 0.592);
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  .register-login{
+    color: #f5f5f5;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 12px;
+    cursor: pointer;
+  }
+    /* ----------------------------------------------------------------REGISTER------------------------------------------------------------------------ */
+    #register{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+        padding-top: 40px;
+      }

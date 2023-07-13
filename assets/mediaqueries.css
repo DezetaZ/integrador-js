@@ -61,9 +61,18 @@
     .hero-info{
         text-align: center;
     }
+    .hero-text>h2{
+        display: none;
+    }
 }
 @media (max-width: 558px){
     .terminos>p:first-child{
         text-align: end;
+    }
+    .hero-title-bot{
+        width: 100%;
+    }
+    .hero-title-top{
+        width: 100%;
     }
 }

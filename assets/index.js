@@ -314,7 +314,27 @@ const QuestItemCart = (e) => {
         aumentarItemCart(e.target.dataset.id);    }
     updateCart();
 };
+const resetCart =()=>{
+    cartCont= [];
+    updateCart();
+}
+const questBuy =(confirm, end)=>{
+    if(!cartCont.length) return;
+    if(window.confirm(confirm)){
+        resetCart();
+        alert(end);
+    };
+};
+const CompleteBuy =()=>{
+    questBuy("Realizar compra?", "Compra realizada con exito!");
 
+};
+const Vaciar =()=>{
+    if(window.confirm("Desea vaciar el carrito?")) {
+        resetCart();
+    }
+    return;
+}
 
 const init = () => {
 
@@ -329,6 +349,8 @@ const init = () => {
     document.addEventListener("DOMContentLoaded", showCartTotal);
     productsContainer.addEventListener("click", addProduct);
     productsCart.addEventListener("click", QuestItemCart);
+    btnBuy.addEventListener("click", CompleteBuy);
+    btnVaciar.addEventListener("click", Vaciar);
     clearBtn(btnBuy);
     clearBtn(btnVaciar);
     renderCartBubble();
