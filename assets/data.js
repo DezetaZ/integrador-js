@@ -131,7 +131,7 @@ const productsData = [
     id: 17,
     name: "show Viwsor",
     calidad: "unic",
-    price: 10.000,
+    price: 10000,
     img: "./assets/img/skins/show-viwsor.png",
     
 },
