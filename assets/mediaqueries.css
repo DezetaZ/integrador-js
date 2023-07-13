@@ -52,6 +52,9 @@
     .footer-cont{
         padding-bottom: 5px;
     }
+    .add-msg{
+        width: 100%;
+    }
 }
 @media (max-width: 710px){
     .hero-text{
@@ -64,6 +67,7 @@
     .hero-text>h2{
         display: none;
     }
+
 }
 @media (max-width: 558px){
     .terminos>p:first-child{
